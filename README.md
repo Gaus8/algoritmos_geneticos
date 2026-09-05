@@ -25,7 +25,12 @@ pip install -r requirements.txt
 
 - **Mecanismo de penalización:** Penalización Estricta (Muerte Natural). Si el costo total supera el presupuesto, la aptitud se fuerza a $0$:
 
-$$f(x) = \begin{cases} \sum_{i=1}^{10} r_i \cdot x_i & \text{si } \sum_{i=1}^{10} c_i \cdot x_i \le 100 \\ 0 & \text{si } \sum_{i=1}^{10} c_i \cdot x_i > 100 \end{cases}$$.
+$$
+f(x) = \begin{cases}
+\sum_{i=1}^{10} r_i \cdot x_i & \text{si } \sum_{i=1}^{10} c_i \cdot x_i \le 100 \\
+0 & \text{si } \sum_{i=1}^{10} c_i \cdot x_i > 100
+\end{cases}
+$$
 
 ### 2. Ejercicio 2: Selección de Personal (Restricción de Igualdad Cardinal)
 
@@ -35,7 +40,9 @@ $$f(x) = \begin{cases} \sum_{i=1}^{10} r_i \cdot x_i & \text{si } \sum_{i=1}^{10
 
 - **Mecanismo de Penalización:** Penalización Cuadrática Progresiva basada en la distancia euclidiana/desviación absoluta respecto al tamaño objetivo:
 
-$$f(x) = \max\left(0, \sum_{j=1}^{12} h_j \cdot x_j - \lambda \cdot \left\vert{} \sum_{j=1}^{12} x_j - 5 \right\vert{}^2\right)$$
+$$
+f(x) = \max\left(0, \sum_{j=1}^{12} h_j \cdot x_j - \lambda \cdot \left\vert{} \sum_{j=1}^{12} x_j - 5 \right\vert{}^2\right)
+$$
 
 Donde $\lambda = 100$ actúa como factor de escala de penalización.
 
