@@ -1,6 +1,4 @@
 # Práctica Algoritmos genéticos: Optimización Combinatoria con Algoritmos Genéticos y Manejo de Restricciones
-
-## Descripcion
 Este repositorio contiene la implementación en Python de diversas técnicas de representación genotípica, funciones de aptitud penalizadas y operadores genéticos aplicados a problemas de optimización combinatoria binaria basados en el Problema de la Mochila estipulado y explicado en clase el 03 de septiembre de 2026 en la Universidad de Cundinamarca Seccional Ubaté.
 ---
 ## Arquitecctura del proyecto práctico
